@@ -1,0 +1,59 @@
+/* #040404 black */
+/* #451728 burgundy */
+/* #850932 darker red */
+/* #a10d3e red */
+/* #ffc61b yellow */
+/* #5a5d71 lighter blue */
+/* #56596f light blue */
+/* #464962 blue */
+/* #31344e dark blue */
+
+html, body, .outer-viewer-container {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.outer-viewer-container {
+    background-color: #040404;
+    color: #ffc61b;
+    transition-duration: 0.3s;
+}
+
+#root {
+    width: 95%;
+    height: 85%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.legend {
+    display: flex;
+    background-color: #040404;
+    color: white;
+    font-size: 12px;
+    justify-content: center;
+    height: 16px;
+    align-items: center;
+    font-family: 'Cinzel', serif;
+}
+
+.legend-points {
+    margin-right: 55px;
+    font-size: medium;
+}
+
+#red {
+    color: #a10d3e;
+}
+
+#yellow {
+    color: #ffc61b;
+}

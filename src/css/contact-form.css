@@ -1,0 +1,56 @@
+/* #040404 black */
+/* #451728 burgundy */
+/* #850932 darker red */
+/* #a10d3e red */
+/* #ffc61b yellow */
+/* #5a5d71 lighter blue */
+/* #56596f light blue */
+/* #464962 blue */
+/* #31344e dark blue */
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding-bottom: 20px;
+    width: 100%;
+}
+
+form > input {
+    width: 250px;
+    font-family: 'Cinzel', serif;
+}
+
+form > textarea {
+    font-family: 'Cinzel', serif;
+    width: 250px;
+    height: 50px;
+}
+
+form > button {
+    font-family: 'Cinzel', serif;
+    height: 25px;
+    width: 250px;
+    border-radius: 5px;
+    background-color: #ffc61b;
+    transition: 0.3s;
+}
+
+form > button:hover {
+    cursor: pointer;
+    background-color: #1a7e11ce;
+    color: whitesmoke;
+}
+
+#contact-modal > h1 {
+    margin-top: 5px;
+    color: whitesmoke;
+}
+
+#contact-modal > h3 {
+    color: whitesmoke;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
