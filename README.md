@@ -1,2 +1,2 @@
-## SimplifySpaceJunk
+# SimplifySpaceJunk
 ### An easier way to view the chaos of outer space...
