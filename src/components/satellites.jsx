@@ -1,33 +1,30 @@
-import React, { Component, useState, useEffect } from 'react';
-import {getSatellites} from '../util/satellite_api'
-import Satellite from './satellite'
+import React, { Component, useState, useEffect, useCallback } from 'react';
+import { getSatellites } from '../util/satellite_api';
+import Satellite from './satellite';
 
 const Satellites = () => {
-    let [satellitesArr, setSatellitesArr] = useState([]);
-    
-    for (let i = 1; i <= 1; i++) { // change loop to i <= 113 to get ALL of the currently tracked debris
+	let [satellitesArr, setSatellitesArr] = useState([]);
+
+    const getAllSatellites = useCallback(async () => {
         let satellites = [];
+        for (let i = 1; i <= 1; i++) {
+            let tempSat = await getSatellites(i);
+            satellites.push(...tempSat);
+        }
+        setSatellitesArr(satellites)
+    }, [satellitesArr])
 
-        getSatellites(i).then((res) => {
-            satellites.push(...res.data.member);
+    useEffect(() => {
+        getAllSatellites()
+    }, []) 
 
-            if (i === 1) {
-                setSatellitesArr(satellites);
-            }
-        })
-        .catch(function (error) {
-            console.log(error);
-        });
-    }
+    if (satellitesArr.length === 0) return <></>
 
 	return (
 		<>
-            {
-                satellitesArr.map((satellite, i) => {
-                    return <Satellite key={i} satellite={satellite}/>
-                })
-                
-            }
+			{satellitesArr.map((satellite, i) => (
+				<Satellite key={i} satellite={satellite} />
+			))}
 		</>
 	);
 };

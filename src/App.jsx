@@ -10,7 +10,7 @@ const App = () => {
     return (
         <Canvas>
             <OrbitControls />
-            <Stars/>
+            {/* <Stars position={[10000, 10000, 10000]}/> */}
             <ambientLight intensity={0.3}/>
             <spotLight position={[10, 5, 10]} angle={0.3}/>
             <Globe />
@@ -19,5 +19,5 @@ const App = () => {
         </Canvas>
     );
 }
- 
+
 export default App;

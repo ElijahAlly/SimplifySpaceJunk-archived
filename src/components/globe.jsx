@@ -10,7 +10,7 @@ const Globe = () => {
 				visible
 				position={[0, 0, 0]}
 				rotation={[Math.PI / 2, 0, 0]}>
-				<sphereGeometry args={[1, 16, 16]} />
+				<sphereGeometry args={[37, 62, 62]} />
 				<meshStandardMaterial color='#607fb3' />
 			</mesh>
 		</>

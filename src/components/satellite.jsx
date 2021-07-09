@@ -5,7 +5,6 @@ import {
 } from 'satellite.js';
 
 const Satellite = ({ satellite }) => {
-
 	// Initialize a satellite record
 	let satrec = twoline2satrec(satellite.line1, satellite.line2);
 	const positionAndVelocity = propagate(satrec, new Date());
@@ -18,15 +17,15 @@ const Satellite = ({ satellite }) => {
 	let satelliteY = positionEci.y;
 	let satelliteZ = positionEci.z;
 
-    console.log([satelliteX, satelliteY, satelliteZ]);
-
+    // reduce coordinates to fit
+	
 	return (
 		<>
 			<mesh
 				visible
 				position={[satelliteX, satelliteY, satelliteZ]}
 				rotation={[Math.PI / 2, 0, 0]}>
-				<sphereGeometry args={[1, 16, 16]} />
+				<sphereGeometry args={[1, 12, 12]} />
 				<meshStandardMaterial color='pink' />
 			</mesh>
 		</>
