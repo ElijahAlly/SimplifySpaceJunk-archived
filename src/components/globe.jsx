@@ -5,12 +5,12 @@ const Globe = () => {
 	return (
 		<>
 			<mesh
-                onPointerOver={() => console.log('Earth')}
-                onClick={() => console.log('Clicked Earth')}
+				onPointerOver={() => console.log('Earth')}
+				onClick={() => console.log('Clicked Earth')}
 				visible
 				position={[0, 0, 0]}
 				rotation={[Math.PI / 2, 0, 0]}>
-				<sphereGeometry args={[37, 62, 62]} />
+				<sphereGeometry args={[2, 34, 34]} />
 				<meshStandardMaterial color='#607fb3' />
 			</mesh>
 		</>

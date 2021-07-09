@@ -1,24 +1,25 @@
-import React, { Component, useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { getSatellites } from '../util/satellite_api';
 import Satellite from './satellite';
 
 const Satellites = () => {
 	let [satellitesArr, setSatellitesArr] = useState([]);
 
-    const getAllSatellites = useCallback(async () => {
-        let satellites = [];
-        for (let i = 1; i <= 1; i++) {
-            let tempSat = await getSatellites(i);
-            satellites.push(...tempSat);
-        }
-        setSatellitesArr(satellites)
-    }, [satellitesArr])
+	const getAllSatellites = useCallback(async () => {
+		let satellites = [];
+		for (let i = 1; i <= 1; i++) {
+			// i <= 113 will get back every satellite tracked by NASA - will take forever to load :(
+			let tempSat = await getSatellites(i);
+			satellites.push(...tempSat);
+		}
+		setSatellitesArr(satellites);
+	}, [satellitesArr]);
 
-    useEffect(() => {
-        getAllSatellites()
-    }, []) 
+	useEffect(() => {
+		getAllSatellites();
+	}, []);
 
-    if (satellitesArr.length === 0) return <></>
+	if (satellitesArr.length === 0) return <></>;
 
 	return (
 		<>

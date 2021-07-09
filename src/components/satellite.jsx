@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
-import {
-	propagate,
-	twoline2satrec,
-} from 'satellite.js';
+import { propagate, twoline2satrec } from 'satellite.js';
+import { formatPostion, chooseColor } from '../util/satellite_helpers';
 
 const Satellite = ({ satellite }) => {
 	// Initialize a satellite record
@@ -17,16 +15,20 @@ const Satellite = ({ satellite }) => {
 	let satelliteY = positionEci.y;
 	let satelliteZ = positionEci.z;
 
-    // reduce coordinates to fit
-	
+	// reduce coordinates to fit canvas
+	satelliteX = formatPostion(satelliteX);
+	satelliteY = formatPostion(satelliteY);
+	satelliteZ = formatPostion(satelliteZ);
+
 	return (
 		<>
 			<mesh
+				onPointerOver={() => console.log(satellite.name)}
 				visible
 				position={[satelliteX, satelliteY, satelliteZ]}
 				rotation={[Math.PI / 2, 0, 0]}>
-				<sphereGeometry args={[1, 12, 12]} />
-				<meshStandardMaterial color='pink' />
+				<sphereGeometry args={[.5, 12, 12]} />
+				<meshStandardMaterial color={chooseColor()} />
 			</mesh>
 		</>
 	);
