@@ -40,20 +40,16 @@ html, body, .outer-viewer-container {
     color: white;
     font-size: 12px;
     justify-content: center;
-    height: 16px;
+    height: 20px;
     align-items: center;
     font-family: 'Cinzel', serif;
+    font-size: 18px;
 }
 
-.legend-points {
-    margin-right: 55px;
-    font-size: medium;
-}
-
-#red {
-    color: #a10d3e;
-}
-
-#yellow {
-    color: #ffc61b;
+.legend > h4 {
+    height: 30px;
+    background-color: #040404;
+    padding: 10px;
+    border-radius: 8px;
+    border-top: .5px solid #ffc61b;
 }

@@ -13,9 +13,13 @@ import './css/modals.css';
 import './css/contact-form.css';
 import './css/welcome-modal.css';
 
-document.addEventListener('DOMContentLoaded', () => {
-	handleModals();
+handleModals();
 
+if (!localStorage.getItem('pageNum')) {
+	localStorage.setItem('pageNum', '1')
+}
+
+document.addEventListener('DOMContentLoaded', () => {
 	const root = document.getElementById('root');
 	ReactDOM.render(<App />, root);
 });

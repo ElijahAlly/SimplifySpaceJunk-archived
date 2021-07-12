@@ -37,7 +37,7 @@
 
 #close-modal, #countdown  {
     width: 100%;
-    height: 30px;
+    height: 50px;
     background-color: #ffc61b;
     display: none;
     align-items: center;

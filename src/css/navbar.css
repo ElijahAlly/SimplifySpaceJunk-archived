@@ -33,29 +33,21 @@
     color: #ffc61b;
     font-size: 17px;
     text-decoration: none;
-}
-
-.nav-links:hover {
-    color: whitesmoke;
-    cursor: pointer;
-} 
-
-.nav-links {
     background: 
-      linear-gradient(to right, #31344e, #31344e),
-      linear-gradient(to right, whitesmoke, whitesmoke);
+    linear-gradient(to right, #31344e, #31344e),
+    linear-gradient(to right, whitesmoke, whitesmoke);
     background-size: 100% 0.1em, 0 0.1em;
     background-position: 100% 100%, 0 100%;
     background-repeat: no-repeat;
-    transition: background-size 400ms;
+    transition: background-size .6s;
 }
   
 .nav-links:hover,
 .nav-links:focus {
+    color: whitesmoke;
+    cursor: pointer;
     background-size: 0 0.1em, 100% 0.1em;
 }
-
-
 
 .logo-container {
     height: 90%;

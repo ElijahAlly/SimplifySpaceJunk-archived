@@ -17,12 +17,14 @@ const solutionsLink = modalLinks[1];
 const contactLink = modalLinks[2];
 
 export const handleModals = () => {
-    // display welcome modal on page load
-    modalBackground.style.display = 'block'
-    modalForeground.style.display = 'flex'
-    welcomeModal.style.display = 'flex'
-
-    countdown.style.display = 'flex'
+    // display welcome modal on page load if its first page load
+    if (!parseInt(localStorage.getItem('pageNum'))) {
+        modalBackground.style.display = 'block'
+        modalForeground.style.display = 'flex'
+        welcomeModal.style.display = 'flex'
+    
+        countdown.style.display = 'flex'
+    }
 
     
     // open modal logic

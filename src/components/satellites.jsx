@@ -6,8 +6,10 @@ const Satellites = () => {
 	let [satellitesArr, setSatellitesArr] = useState([]);
 
 	const getAllSatellites = useCallback(async () => {
+		const pageNum = parseInt(localStorage.getItem('pageNum'))
+		console.log(pageNum)
 		let satellites = [];
-		for (let i = 1; i <= 1; i++) {
+		for (let i = 1; i <= pageNum; i++) {
 			// i <= 113 will get back every satellite tracked by NASA - will take forever to load :(
 			let tempSat = await getSatellites(i);
 			satellites.push(...tempSat);
