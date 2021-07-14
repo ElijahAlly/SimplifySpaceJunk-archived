@@ -4,6 +4,7 @@
 	"author": "elijah-ally",
 	"description": "An easier way to view the chaos of outer space...",
 	"main": "index.js",
+	"homepage": "http://ElijahAlly.github.io/SimplifySpaceJunk",
 	"scripts": {
 		"start": "react-scripts start",
 		"build": "react-scripts build",
