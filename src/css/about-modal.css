@@ -1,0 +1,51 @@
+/* #120007 black */
+/* #451728 burgundy */
+/* #850932 darker red */
+/* #a10d3e red */
+/* #ffc61b yellow */
+/* #5a5d71 lighter blue */
+/* #56596f light blue */
+/* #464962 blue */
+/* #31344e dark blue */
+
+
+#about-modal {
+    overflow-y: scroll;
+    height: 100%;
+    padding: 10px;
+    padding-right: 20px;
+    color: antiquewhite;
+}
+
+/* #about-modal::-webkit-scrollbar-thumb,
+#about-modal::-webkit-scrollbar-track,
+#about-modal::-webkit-scrollbar-track-piece,
+#about-modal::-webkit-scrollbar-corner, */
+#about-modal::-webkit-scrollbar {
+    display: block;
+    padding-left: 10px;
+}
+
+.about-header {
+    margin-top: 10px;
+    font-size: 21px;
+    font-weight: 500;
+    align-self: flex-start;
+    
+}
+
+.about-quote {
+    text-align: center;
+    color: aquamarine;
+    font-size: 15px;
+    margin-top: 5px;
+    margin-bottom: 7px;
+}
+
+.about-purpose {
+    -webkit-text-emphasis-style: dot;
+    -webkit-text-emphasis-color: initial;
+    text-align: center;
+    font-size: 18px;
+    font-family: monospace;
+}

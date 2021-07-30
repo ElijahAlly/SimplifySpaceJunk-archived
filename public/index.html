@@ -1,77 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="icon" href="https://active-storage-big-time-sound-seeds.s3.amazonaws.com/SimplifySpaceJunkLogo.png">
-        <script src="./src/index.js"></script>
-        <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&display=swap" rel="stylesheet">
-        <title>SimplifySpaceJunk</title>
-    </head>
-    <body>
-        <nav class="navbar">
-            <div class="logo-container">
-                <img src="https://active-storage-big-time-sound-seeds.s3.amazonaws.com/SimplifySpaceJunkLogo.png" class="logo"/>
-                <h1 class="title">SimplifySpaceJunk</h1>
-            </div>
-            <ul class="main-nav" id="js-menu">
-                <li>
-                    <a href="#" id="about-link" class="nav-links modal-links">About</a>
-                </li>
-                <li>
-                    <a href="#" id="solutions-link" class="nav-links modal-links">Solutions</a>
-                </li>
-                <li>
-                    <a href="#" id="contact-link" class="nav-links modal-links">
-                        Contact Me
-                    </a>
-                </li>
-            </ul>
-        </nav>
-        <div class="legend">
-            <h4>Click on a satellite to pin/unpin info box</h4>
-        </div>
-        <div class="outer-viewer-container">
-            <div id="root"></div>
-        </div>
-        <section class="modal-background"></section>
-        <section class="modal-foreground">
-            <div id="welcome-modal">
-                <div id='welcome-header'>SimplifySpaceJunk</div>
-                <div id="welcome-message">
-                    <h3>An easier way to view the</h3>
-                    <h4 id='chaos'>choas</h4> 
-                    <h3>of outer space</h3>
-                </div>
-                <div class="col-3">
-                    <div class="snippet" data-title=".dot-flashing">
-                      <div class="stage">
-                        <div class="dot-flashing"></div>
-                      </div>
-                    </div>
-                </div>
-            </div>
-            <div id="about-modal">
-
-            </div>
-            <div id="solutions-modal">
-
-            </div>
-            <div id="contact-modal">
-                <h1>Contact Me</h1>
-                <li>
-                    <a href="https://github.com/ElijahAlly/SimplifySpaceJunk" target="_blank" class="nav-links">GitHub</a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/elijah-ally-123ea/" target="_blank" class="nav-links">LinkedIn</a>
-                </li>
-            </div>
-            <div id="close-modal">CLOSE</div>
-            <div id="countdown">
-                <div>Launching site</div>
-            </div>
-        </section>
-    </body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			rel="icon"
+			href="https://active-storage-big-time-sound-seeds.s3.amazonaws.com/SimplifySpaceJunkLogo.png"
+		/>
+		<script src="./src/index.js"></script>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&display=swap"
+			rel="stylesheet"
+		/>
+		<title>SimplifySpaceJunk</title>
+	</head>
+	<body>
+		<nav class="navbar">
+			<div class="logo-container">
+				<img
+					src="https://active-storage-big-time-sound-seeds.s3.amazonaws.com/SimplifySpaceJunkLogo.png"
+					class="logo"
+				/>
+				<h1 class="title">SimplifySpaceJunk</h1>
+			</div>
+			<ul class="main-nav" id="js-menu">
+				<li>
+					<a href="#" id="welcome-link" class="nav-links">Welcome</a>
+				</li>
+				<li>
+					<a href="#" id="about-link" class="nav-links">About</a>
+				</li>
+				<li>
+					<a href="#" id="solutions-link" class="nav-links">Solutions</a>
+				</li>
+				<li>
+					<a href="#" id="contact-link" class="nav-links"> Contact Me </a>
+				</li>
+			</ul>
+		</nav>
+		<div class="legend">
+			<h4>Click on a satellite to pin/unpin info box</h4>
+		</div>
+		<div class="outer-viewer-container">
+			<div id="root"></div>
+		</div>
+		<section class="modal-background"></section>
+		<section class="modal-background"></section>
+		<section class="modal-foreground">
+			<div id="welcome-modal">
+				<div id="welcome-header">SimplifySpaceJunk</div>
+				<div id="welcome-message">
+					<h3>An easier way to view the</h3>
+					<h4 id="chaos">choas</h4>
+					<h3>of outer space</h3>
+				</div>
+				<div class="col-3">
+					<div class="snippet" data-title=".dot-flashing">
+						<div class="stage">
+							<div class="dot-flashing"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="about-modal">
+                <!-- purpose -->
+				<h3 class="about-header">Purpose</h3>
+				<h4 class="about-quote">
+					"Science literacy is inoculation against those who are full of **it."
+					- Neil deGrasse Tyson
+				</h4>
+				<div class="about-purpose">
+					As a long time space exploration enthusiast, I wanted to visualize the
+					amount of space debris we have orbiting Earth. With each additional
+					piece of junk we leave to clutter space, the launch windows for future
+					space missions decrease ever so slightly until the possibility of any
+					space travel completely vanishes.
+				</div>
+                <!-- directions -->
+				<h3 class="about-header">Directions</h3>
+				<ul class="about-list">
+					<li class="about-list-li">
+						Hover over a satellite to display its name and NORAD (Sattellite
+						Id).
+					</li>
+					<li class="about-list-li">
+						Click on a satellite to mount and dismount the information box.
+					</li>
+					<li class="about-list-li">
+						Clicking 'Read More' will take you to that satellites page on NY2O
+						which contains an abundance of live data.
+					</li>
+					<li class="about-list-li">
+						Initially there will be 100 satellites rendering. Click on 'Get
+						More' to fetch 100 more. There are over 34,000 pieces of space
+						debris, so go as far as your computer will let you! 2,000 is a good
+						max :&#41;
+					</li>
+					<li class="about-list-li">
+						If loading all those satellites become to much for your computer,
+						click 'Reset To 100' to go back to 100 satellites.
+					</li>
+					<li class="about-list-li">
+						<div class="death-star">Seeing a weird death star shape?</div>
+						<div class="death-star-shape">
+							<h4 class="star-shape-header">Yes</h4>
+							<h4 class="star-shape">
+								Well due to astronomical differences in eliptical orbits, some
+								calculations are needed to render potentially 34,000 satellites
+								in view
+							</h4>
+						</div>
+						<div class="death-star-shape">
+							<h4 class="star-shape-header">No</h4>
+							<h4 class="star-shape">
+								Get to 1000+ satellites and tell me you don't see a death star
+								:|
+							</h4>
+						</div>
+					</li>
+				</ul>
+                <!-- sources -->
+                <div class="about-header">Sources</div>
+                <ul class="about-list">
+                    <li class="about-list-li">
+                        I used <a href="https://api.nasa.gov/#browseAPI" target="_blank">NASA's TLE API</a> who's data is provided by <a href="https://celestrak.com/" target="_blank">CelesTrack</a>
+                    </li>
+                    <li class="about-list-li"><a href="https://www.n2yo.com" target="_blank">NY2O</a> is used for additional information about any given satellite</li>
+                </ul>
+			</div>
+			<div id="solutions-modal">
+				<h2 id="solutions-header">
+					From reusable rockets to lasers and nets, here are a few of the
+					proposed solutions to deorbit or prevent future space junk.
+				</h2>
+				<a
+					href="https://www.esa.int/Enabling_Support/Space_Engineering_Technology/Shaping_the_Future/Sail_solutions_for_space_junk"
+					target="_blank"
+					class="solutions-links"
+					>Sails</a
+				>
+				<a
+					href="https://www.esa.int/Safety_Security/Clean_Space/Want_to_snag_a_satellite_Try_a_net"
+					target="_blank"
+					class="solutions-links"
+					>Nets</a
+				>
+				<a
+					href="https://spectrum.ieee.org/laser-could-clear-space-junk-from-orbit"
+					target="_blank"
+					class="solutions-links"
+					>Lasers</a
+				>
+				<a
+					href="https://thehill.com/changing-america/resilience/smart-cities/561726-elon-musk-says-his-starship-can-chomp-up-space-junk"
+					target="_blank"
+					class="solutions-links"
+					>SpaceX Starship</a
+				>
+				<a
+					href="https://clearspace.today/"
+					target="_blank"
+					class="solutions-links"
+					>ClearSpace-1 (Great Visuals)</a
+				>
+			</div>
+			<div id="contact-modal">
+				<a
+					href="https://github.com/ElijahAlly/SimplifySpaceJunk"
+					target="_blank"
+					class="contact-link"
+					id="git-hub-link"
+					>GitHub</a
+				>
+				<a
+					href="https://www.linkedin.com/in/elijah-ally-123ea/"
+					target="_blank"
+					class="contact-link"
+					>LinkedIn</a
+				>
+				<a
+					href="https://elijahally.github.io/ElijahAllyPortfolio/"
+					target="_blank"
+					class="contact-link"
+					>My Portfolio</a
+				>
+			</div>
+			<div id="close-modal">CLOSE</div>
+			<div id="countdown">
+				<div>Launching site</div>
+			</div>
+		</section>
+	</body>
 </html>

@@ -53,3 +53,11 @@ html, body, .outer-viewer-container {
     border-radius: 8px;
     border-top: .5px solid #ffc61b;
 }
+
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 900px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2){
+    .outer-viewer-container {
+        height: 100%;
+        width: 100%;
+    }
+}

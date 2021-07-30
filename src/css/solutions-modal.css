@@ -1,0 +1,40 @@
+/* #120007 black */
+/* #451728 burgundy */
+/* #850932 darker red */
+/* #a10d3e red */
+/* #ffc61b yellow */
+/* #5a5d71 lighter blue */
+/* #56596f light blue */
+/* #464962 blue */
+/* #31344e dark blue */
+
+.solutions-modal {
+    display: flex;
+    flex-direction: column;
+}
+
+#solutions-header {
+    padding: 10px 20px;
+    font-size: 18px;
+    font-family: 'Cinzel', serif;
+    font-weight: 300;
+    color: #e6c76d;
+    text-align: center;
+}
+
+.solutions-links {
+    font-size: 20px;
+    text-decoration: none;
+    color: antiquewhite;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+}
+
+.solutions-links:hover {
+    background-color: #56596f;
+}
