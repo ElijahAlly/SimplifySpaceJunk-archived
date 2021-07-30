@@ -49,3 +49,40 @@
     font-size: 18px;
     font-family: monospace;
 }
+
+.about-list {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-list-li {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-left-width: initial;
+    border-left-style: solid;
+    border-left-color: #5a5d71;
+    padding-left: 5px;
+    font-size: 17px;
+    font-family: math;
+}
+
+.about-list-li > a {
+    color: aquamarine;
+    text-decoration: none;
+}
+
+.about-list-li > a:hover {
+    text-decoration: 1px underline;
+    text-underline-offset: 2px;
+}
+
+.star-shape-header {
+    float: left;
+    color: aquamarine;
+    margin-right: 10px;
+}
+
+.star-shape {
+    margin-top: 8px;
+}
