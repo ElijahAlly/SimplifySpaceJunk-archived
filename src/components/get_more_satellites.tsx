@@ -4,7 +4,7 @@ import '../css/get-satellites.css'
 const GetMoreSatellites = () => {
 
     const handleClick = () => {
-        let numSats = document.getElementById('number-of-satellites');
+        let numSats: any = document.getElementById('number-of-satellites');
         const pageNum = (parseInt(numSats.innerText.split(' ')[0]) / 100) + 1;
         localStorage.removeItem('pageNum');
         localStorage.setItem('pageNum', `${pageNum}`);
@@ -17,7 +17,7 @@ const GetMoreSatellites = () => {
         window.location.reload();
     }
 
-    let numOfSats = `${parseInt(localStorage.getItem('pageNum')) * 100} Satellites`;
+    let numOfSats = `${parseInt(localStorage.getItem('pageNum') || '1') * 100} Satellites`;
 
     return (
         <div className='get-satellites'>

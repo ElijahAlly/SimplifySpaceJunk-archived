@@ -3,10 +3,10 @@ import { getSatellites } from '../util/satellite_api';
 import Satellite from './satellite';
 
 const Satellites = () => {
-	let [satellitesArr, setSatellitesArr] = useState([]);
+	let [satellitesArr, setSatellitesArr]: any[] = useState([]);
 
 	const getAllSatellites = useCallback(async () => {
-		const pageNum = parseInt(localStorage.getItem('pageNum'))
+		const pageNum = parseInt(localStorage.getItem('pageNum') || '1')
 		console.log(pageNum)
 		let satellites = [];
 		for (let i = 1; i <= pageNum; i++) {
@@ -14,6 +14,7 @@ const Satellites = () => {
 			let tempSat = await getSatellites(i);
 			satellites.push(...tempSat);
 		}
+
 		setSatellitesArr(satellites);
 	}, [satellitesArr]);
 
@@ -25,7 +26,7 @@ const Satellites = () => {
 
 	return (
 		<>
-			{satellitesArr.map((satellite, i) => (
+			{satellitesArr.map((satellite: any, i: number) => (
 				<Satellite key={i} satellite={satellite} />
 			))}
 		</>

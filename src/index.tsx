@@ -21,7 +21,6 @@ if (!localStorage.getItem('pageNum')) {
 	localStorage.setItem('pageNum', '1');
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-	const root = document.getElementById('root');
-	ReactDOM.render(<App />, root);
-});
+document.addEventListener('DOMContentLoaded', (): void => {
+	ReactDOM.render(<App />, document.getElementById('root'))
+})

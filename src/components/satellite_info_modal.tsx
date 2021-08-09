@@ -3,7 +3,9 @@ import '../css/satellite-info-modal.css';
 
 const SatelliteInfoModal = () => {
 	const moreSatInfoNewTab = () => {
-		let satId = document.getElementById('sat-id').innerText;
+		let satId: any = document.getElementById('sat-id');
+		if (!satId) return;
+		satId = satId.innerText;
 		satId = satId.slice(8);
 		window.open(`https://www.n2yo.com/satellite/?s=${satId}#results`, '_blank');
 	};

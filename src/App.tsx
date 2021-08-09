@@ -7,9 +7,9 @@ import GetMoreSatellites from './components/get_more_satellites';
 import { OrbitControls } from '@react-three/drei';
 import { Canvas, extend } from '@react-three/fiber';
 extend({ OrbitControls })
-
-const App = () => {
-	return (
+ 
+const App: React.FunctionComponent = (): any => {
+	return (  
 		<>
 			<SatelliteInfoModal />
 			<GetMoreSatellites />
@@ -25,4 +25,4 @@ const App = () => {
 	);
 };
 
-export default App;
+export default App; 

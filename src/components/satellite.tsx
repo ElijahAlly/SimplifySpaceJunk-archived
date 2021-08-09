@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { propagate, twoline2satrec } from 'satellite.js';
+import { EciVec3, propagate, twoline2satrec } from 'satellite.js';
 import {
 	formatPostion,
 	displaySatInfo,
@@ -8,22 +8,26 @@ import {
 	toggleMount,
 } from '../util/satellite_helpers';
 
-const Satellite = ({ satellite }) => {
+export interface SatelliteProps {
+	satellite: any;
+}
+
+const Satellite: React.FunctionComponent<SatelliteProps> = ({ satellite }) => {
 	// Initialize a satellite record
 	let satrec = twoline2satrec(satellite.line1, satellite.line2);
 	const positionAndVelocity = propagate(satrec, new Date());
 
 	// get position
-	let positionEci = positionAndVelocity.position;
+	let positionEci: any = positionAndVelocity.position;
 
 	const randomNumber = () => {
 		return Math.floor(Math.random() * (150 - 21 + 1)) + 21;
 	};
 
 	// x, y, z, coordinates
-	let satelliteX = positionEci ? positionEci.x : randomNumber();
-	let satelliteY = positionEci ? positionEci.y : randomNumber();
-	let satelliteZ = positionEci ? positionEci.z : randomNumber();
+	let satelliteX: number = positionEci.x || randomNumber();
+	let satelliteY: number = positionEci.y || randomNumber();
+	let satelliteZ: number = positionEci.z || randomNumber();
 
 	// reduce coordinates to fit canvas
 	satelliteX = formatPostion(satelliteX);

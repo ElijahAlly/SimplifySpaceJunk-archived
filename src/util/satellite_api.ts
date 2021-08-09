@@ -1,9 +1,10 @@
 const axios = require('axios');
 
-export const getSatellites = (i) => {
+export const getSatellites = (i: number) => {
 	return axios
 		.get(
 			`https://tle.ivanstanojevic.me/api/tle?page-size=100&page=${i}&api_key=zfCLNrBegtOnEVufO9WRFjfHAi0kM3QgImp0q9Fx`
 		)
-		.then((res) => res.data.member);
+		.then((res: any) => res.data.member);
 };
+
