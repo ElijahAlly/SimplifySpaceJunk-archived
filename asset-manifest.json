@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/SimplifySpaceJunk/static/css/main.f88ddd89.chunk.css",
-    "main.js": "/SimplifySpaceJunk/static/js/main.42ec267c.chunk.js",
-    "main.js.map": "/SimplifySpaceJunk/static/js/main.42ec267c.chunk.js.map",
+    "main.js": "/SimplifySpaceJunk/static/js/main.f495cbae.chunk.js",
+    "main.js.map": "/SimplifySpaceJunk/static/js/main.f495cbae.chunk.js.map",
     "runtime-main.js": "/SimplifySpaceJunk/static/js/runtime-main.623e8a2f.js",
     "runtime-main.js.map": "/SimplifySpaceJunk/static/js/runtime-main.623e8a2f.js.map",
-    "static/js/2.de0c409a.chunk.js": "/SimplifySpaceJunk/static/js/2.de0c409a.chunk.js",
-    "static/js/2.de0c409a.chunk.js.map": "/SimplifySpaceJunk/static/js/2.de0c409a.chunk.js.map",
+    "static/js/2.c19f10d5.chunk.js": "/SimplifySpaceJunk/static/js/2.c19f10d5.chunk.js",
+    "static/js/2.c19f10d5.chunk.js.map": "/SimplifySpaceJunk/static/js/2.c19f10d5.chunk.js.map",
     "index.html": "/SimplifySpaceJunk/index.html",
     "static/css/main.f88ddd89.chunk.css.map": "/SimplifySpaceJunk/static/css/main.f88ddd89.chunk.css.map",
-    "static/js/2.de0c409a.chunk.js.LICENSE.txt": "/SimplifySpaceJunk/static/js/2.de0c409a.chunk.js.LICENSE.txt"
+    "static/js/2.c19f10d5.chunk.js.LICENSE.txt": "/SimplifySpaceJunk/static/js/2.c19f10d5.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.623e8a2f.js",
-    "static/js/2.de0c409a.chunk.js",
+    "static/js/2.c19f10d5.chunk.js",
     "static/css/main.f88ddd89.chunk.css",
-    "static/js/main.42ec267c.chunk.js"
+    "static/js/main.f495cbae.chunk.js"
   ]
 }
