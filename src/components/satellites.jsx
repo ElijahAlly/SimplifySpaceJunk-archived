@@ -3,11 +3,11 @@ import { getSatellites } from '../util/satellite_api';
 import Satellite from './satellite';
 
 const Satellites = () => {
-	let [satellitesArr, setSatellitesArr]: any[] = useState([]);
+	let [satellitesArr, setSatellitesArr] = useState([]);
 
 	const getAllSatellites = useCallback(async () => {
 		const pageNum = parseInt(localStorage.getItem('pageNum') || '1')
-		console.log(pageNum)
+		
 		let satellites = [];
 		for (let i = 1; i <= pageNum; i++) {
 			// i <= 113 will get back every satellite tracked by NASA - will take forever to load :(
@@ -26,7 +26,7 @@ const Satellites = () => {
 
 	return (
 		<>
-			{satellitesArr.map((satellite: any, i: number) => (
+			{satellitesArr.map((satellite, i) => (
 				<Satellite key={i} satellite={satellite} />
 			))}
 		</>

@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 import '../css/satellite-info-modal.css';
 
 const SatelliteInfoModal = () => {
 	const moreSatInfoNewTab = () => {
-		let satId: any = document.getElementById('sat-id');
+		let satId = document.getElementById('sat-id');
 		if (!satId) return;
 		satId = satId.innerText;
 		satId = satId.slice(8);

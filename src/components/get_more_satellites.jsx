@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
+import React from 'react';
 import '../css/get-satellites.css'
 
 const GetMoreSatellites = () => {
 
     const handleClick = () => {
-        let numSats: any = document.getElementById('number-of-satellites');
+        let numSats = document.getElementById('number-of-satellites');
         const pageNum = (parseInt(numSats.innerText.split(' ')[0]) / 100) + 1;
         localStorage.removeItem('pageNum');
         localStorage.setItem('pageNum', `${pageNum}`);

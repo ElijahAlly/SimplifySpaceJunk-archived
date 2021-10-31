@@ -1,4 +1,4 @@
-export const formatPostion = (position: any): any => {
+export const formatPostion = (position) => {
     if (position < 0 && position < -150) {
 		position = `${position}`;
 		position = position.slice(0, 3);
@@ -12,14 +12,10 @@ export const formatPostion = (position: any): any => {
     return position;
 }
 
-interface SatInfo {
-	satelliteId: any;
-	name: Text;
-}
 
-export const displaySatInfo = (satInfo: SatInfo): void => {
+export const displaySatInfo = (satInfo) => {
 	let {satelliteId, name} = satInfo;
-	const satInfoModal: any = document.getElementsByClassName('satellite-modal')[0];
+	const satInfoModal = document.getElementsByClassName('satellite-modal')[0];
 	satInfoModal.style.display = 'flex'
 	document.body.style.cursor = 'pointer';
 	
@@ -36,8 +32,8 @@ export const displaySatInfo = (satInfo: SatInfo): void => {
 	satName.appendChild(name);
 }
 
-export const closeSatInfo = (): void => {
-	const satInfoModal: any = document.getElementsByClassName('satellite-modal')[0];
+export const closeSatInfo = () => {
+	const satInfoModal = document.getElementsByClassName('satellite-modal')[0];
 	satInfoModal.style.display = 'none'
 	document.body.style.cursor = 'auto';
 
@@ -49,7 +45,7 @@ export const closeSatInfo = (): void => {
 	satName.innerText = 'Name: ';
 }
 
-export const toggleMount = (): void => {
+export const toggleMount = () => {
 	const satInfoModal = document.getElementsByClassName('satellite-modal')[0];
 
 	if (Array.from(satInfoModal.classList).includes('mounted')) {
@@ -61,14 +57,14 @@ export const toggleMount = (): void => {
 	pulseGreen()
 }
 
-export const isMounted = (): boolean => {
+export const isMounted = () => {
 	const satInfoModal = document.getElementsByClassName('satellite-modal')[0];
 	if (Array.from(satInfoModal.classList).includes('mounted')) return true;
 	return false;
 }
 
-export const pulseGreen = (): void => {
-	const satInfoModal: any = document.getElementsByClassName('satellite-modal')[0];
+export const pulseGreen = () => {
+	const satInfoModal = document.getElementsByClassName('satellite-modal')[0];
 	satInfoModal.style.backgroundColor = '#451728'
 	setTimeout(() => satInfoModal.style.backgroundColor = ' #31344e', 400)
 }

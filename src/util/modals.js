@@ -1,21 +1,21 @@
 // modal constants
-const modalBackground: any = document.getElementsByClassName('modal-background')[0];
-const modalForeground: any = document.getElementsByClassName('modal-foreground')[0];
+const modalBackground = document.getElementsByClassName('modal-background')[0];
+const modalForeground = document.getElementsByClassName('modal-foreground')[0];
 
 // modal content
-const welcomeModal: any = document.getElementById('welcome-modal');
-const aboutModal: any = document.getElementById('about-modal');
-const solutionsModal: any = document.getElementById('solutions-modal');
-const contactModal: any = document.getElementById('contact-modal');
-const closeModal: any = document.getElementById('close-modal');
-const countdown: any = document.getElementById('countdown');
+const welcomeModal = document.getElementById('welcome-modal');
+const aboutModal = document.getElementById('about-modal');
+const solutionsModal = document.getElementById('solutions-modal');
+const contactModal = document.getElementById('contact-modal');
+const closeModal = document.getElementById('close-modal');
+const countdown = document.getElementById('countdown');
 
 // modal nav links
-const modalLinks: any = document.getElementsByClassName('nav-links');
-const welcomeLink: any = modalLinks[0];
-const aboutLink: any = modalLinks[1];
-const solutionsLink: any = modalLinks[2];
-const contactLink: any = modalLinks[3];
+const modalLinks = document.getElementsByClassName('nav-links');
+const welcomeLink = modalLinks[0];
+const aboutLink = modalLinks[1];
+const solutionsLink = modalLinks[2];
+const contactLink = modalLinks[3];
 
 export const handleModals = () => {
 	let openedWelcomeModal = false;
@@ -45,7 +45,7 @@ export const handleModals = () => {
 	if (openedWelcomeModal) setTimeout(() => closeAllModals(), 7000);
 };
 
-const openModal = (modal: any, countdownTimer = null) => {
+const openModal = (modal, countdownTimer = null) => {
 	welcomeModal.style.display = 'none';
 
 	modal.style.display = 'flex';
