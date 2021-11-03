@@ -20,7 +20,7 @@ const contactLink = modalLinks[3];
 export const handleModals = () => {
 	let openedWelcomeModal = false;
 	// display welcome modal on page load if its first page load
-	if (!parseInt(localStorage.getItem('pageNum') || "1")) {
+	if (!parseInt(localStorage.getItem('pageNum') || "0")) {
 		openedWelcomeModal = true;
 		modalBackground.style.display = 'block';
 		modalForeground.style.display = 'flex';
