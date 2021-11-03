@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/SimplifySpaceJunk/static/css/main.f88ddd89.chunk.css",
-    "main.js": "/SimplifySpaceJunk/static/js/main.f495cbae.chunk.js",
-    "main.js.map": "/SimplifySpaceJunk/static/js/main.f495cbae.chunk.js.map",
+    "main.js": "/SimplifySpaceJunk/static/js/main.e3b4d23e.chunk.js",
+    "main.js.map": "/SimplifySpaceJunk/static/js/main.e3b4d23e.chunk.js.map",
     "runtime-main.js": "/SimplifySpaceJunk/static/js/runtime-main.623e8a2f.js",
     "runtime-main.js.map": "/SimplifySpaceJunk/static/js/runtime-main.623e8a2f.js.map",
     "static/js/2.c19f10d5.chunk.js": "/SimplifySpaceJunk/static/js/2.c19f10d5.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.623e8a2f.js",
     "static/js/2.c19f10d5.chunk.js",
     "static/css/main.f88ddd89.chunk.css",
-    "static/js/main.f495cbae.chunk.js"
+    "static/js/main.e3b4d23e.chunk.js"
   ]
 }
