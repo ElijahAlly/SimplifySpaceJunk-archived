@@ -1,0 +1,54 @@
+.get-satellites {
+	position: fixed;
+	bottom: 6vh;
+	left: 6vh;
+	z-index: 2;
+    height: 12vh;
+    width: 15vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#satellite-count {
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+}
+
+#get-more-btn, #reset-btn {
+    background: #31344e;
+    color: inherit;
+    padding: 5px;
+    border: none;
+    padding: 0;
+    font: inherit;
+    outline: none;
+    border-radius: 8px;
+    height: 30%;
+    transition: 0.3s;
+}
+
+.get-more:hover, #reset-btn:hover {
+    color: white;
+    background: #56596f;
+}
+
+.get-more {
+    cursor: pointer;
+}
+
+.get-more-disabled {
+    opacity: 42%;
+    cursor: not-allowed;
+}
+
+@media only screen and (min-device-width: 520px) and (orientation : portrait) {
+    .get-satellites {
+        bottom: 5vh;
+        left: 3vh;
+        width: 30vw;
+        height: 12vh;
+        font-size: xx-large;
+    }
+}
